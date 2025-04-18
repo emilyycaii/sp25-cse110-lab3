@@ -1,0 +1,23 @@
+.page_title {
+    color: #fb1974;
+}
+
+.page_subtitle {
+    color: hsl(342, 96%, 64%);
+}
+
+body {
+    color: rgb(244, 99, 100);
+}
+
+a {
+    color: coral;
+}
+
+.page_topic {
+    color: color(srgb 1 0 0 / 0.70);
+}
+
+main {
+    color: color-mix(in srgb, red 40%, orange 70%);
+}
