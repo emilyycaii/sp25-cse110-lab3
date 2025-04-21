@@ -6,8 +6,20 @@
     color: hsl(342, 96%, 64%);
 }
 
+/*designing whole page*/
+* {
+    font-family: 'Poppins', sans-serif;
+}
 body {
     color: rgb(244, 99, 100);
+    width: 50%;
+    margin: auto;
+    text-align: left; 
+    height: 100vh;
+    max-width: 1200px;
+    min-width: 600px;
+
+    font-size: 16px;
 }
 
 a {
@@ -20,4 +32,166 @@ a {
 
 main {
     color: color-mix(in srgb, red 40%, orange 70%);
+}
+
+form {
+    margin-top: 20px;
+    margin-right: 30mm;
+    margin-bottom: 20px;
+    margin-left: 0.4in;
+}
+
+fieldset {
+    padding-top: 10px;
+    padding-right: 25%;
+    padding-bottom: 20px;
+    padding-left: 35%;
+
+    border-style: dashed;
+    border-color: coral;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+nav {
+    margin: 0.5em 0 1em 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    right: 0; 
+    text-align: center;
+
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+li {
+    padding: 2px 1px 1px 1px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    position: absolute;
+}
+
+button:hover {
+    background-color: coral;
+}
+
+a:active {
+    color: orange;
+    transform: scale(0.95);
+}
+
+#notes ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    list-style-position: inside;
+    padding-left: 0;
+}
+  
+#notes li {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    background-color: lightgrey;
+}
+
+input, textarea, select {
+    color: coral;
+}
+
+section > p {
+    font-weight: bold;
+}
+
+h2 ~ p {
+    font-style: italic;
+}
+
+h2 + p {
+    margin-top: 10px;
+}
+
+p.highlight {
+    color: pink;
+}
+
+div:has(input) {
+    border: 2px solid pink;
+}
+
+.container {
+    background-color: lightgray;
+
+    button {
+        color: pink;
+    }
+}
+
+/* tablets or smaller laptops */
+@media screen and (max-width: 1023px) {
+    body {
+        width: 80%; 
+        font-size: 15px; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    fieldset {
+        display: block;
+    }
+
+    #notes ol {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* smaller screens */
+@media screen and (max-width: 767px) {
+    body {
+        width: 90%; 
+        font-size: 14px; 
+    }
+
+    nav {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        display: block;
+        padding: 15px;
+    }
+
+    #notes ol {
+        grid-template-columns: 1fr; 
+    }
 }
