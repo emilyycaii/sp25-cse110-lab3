@@ -11,8 +11,12 @@
     font-family: 'Poppins', Arial, sans-serif;
 }
 
+:root {
+    --main-color: rgb(244, 99, 100);
+}
+
 body {
-    color: rgb(244, 99, 100);
+    color: var(--main-color, white);
     width: 50%;
     margin: auto;
     text-align: left; 
